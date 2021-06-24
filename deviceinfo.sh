@@ -32,7 +32,7 @@ sdk_ver=$($as getprop ro.build.version.sdk)
 screen_ensity=$($as getprop ro.sf.lcd_density)
 screen_width=$($as wm size)
 
-#Versions Tab
+# Versions Tab
 vending_vs=$($as dumpsys package com.android.vending | grep version)
 gsf_vs=$($as dumpsys package com.google.android.gsf | grep version)
 dl_vs=$($as dumpsys package com.android.providers.downloads | grep version)
@@ -55,7 +55,7 @@ Id: '$id'
 Bootloader: '$bootloader'
 Relase version: '$relase_ver'
 Build data: '$build_date'
-Fingerprint: '$sdk_ver'
+Fingerprint: '$fingerprint'
 Sdk Version: '$sdk_ver'
 
 
